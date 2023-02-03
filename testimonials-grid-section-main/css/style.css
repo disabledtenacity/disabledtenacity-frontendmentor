@@ -1,62 +1,96 @@
 :root{
     /* ======== Fonts ======== */
     /* Font sizes */
-    --fs-body: 0.81rem; /*13px*/
+    --fs-wrapper: 0.81rem; /* 13 */
+    --fs-body: 1rem; /* 16 */
+    --fs-quote: 1.25rem; /* 20 */
     /* Font weights */
     --fw-600: font-weight: 600;
     --fw-500: font-weight: 500;
     /* ======== Colors ======== */
     /* Primary colors */
-  --clr-primary-100: hsl(263 55% 52%);
-  --clr-primary-200: hsl(217 19% 35%);
-  --clr-primary-300: hsl(219 29% 14%);
+  --purple: hsl(263 55% 52%);
+  --blue-100: hsl(217 19% 35%);
+  --blue-200: hsl(219 29% 14%);
   /* Neutral colors */
-  --clr-neutral-100: hsl(0 0% 100%);
-  --clr-neutral-200: hsl(210 46% 95%);
-  --clr-neutral-300: hsl(0 0% 81%);
+  --white: hsl(0 0% 100%);
+  --gray-100: hsl(210 46% 95%);
+  --gray-200: hsl(0 0% 81%);
 }
+
+/* Gobal 1440px */
 
 #container{
     font-family: 'Barlow Semi Condensed', sans-serif;
+    margin: 0 auto;
+    background-color: var(--gray-200);
+    width: 90rem;
+    height: 56.25rem;
     display: grid;
-    margin: 0;
-    background-color: var(--clr-neutral-300);
+    place-content: center;
+    padding-block: 2rem;
 }
 
+.cards{
+    border-radius: 1rem;
+}
 
-.customer-photos{
-    
+.flex{
+    display: flex;
+    gap: 1rem;
+    /* align-items: center;
+    line-height: 1.2; */
+}
+img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
 }
 
 .wrapper{
-
+    font-size: var(--fs-wrapper);
+    line-height: 0.25rem;
 }
 
 .pull-quote{
-
+    font-size: var(--fs-quote);
+    font-weight: var(--fw-600);
 }
 
 .review{
-
+    font-size: var(--fs-body);
+    font-weight: var(--fw-500);
 }
 
 #daniel{
-
+    background-color: var(--purple);
+    color: var(--white);
 }
 
 #jonathan{
-
+    background-color: var(--blue-100);
+    color: var(--white);
 }
 
-#patrick{
+#jeanette{
+    background-color: var(--white);
+}
 
+
+#patrick{
+    background-color: var(--blue-200);
+    color: var(--white);
 }
 
 #kira{
+    background-color: var(--white);
+}
+
+.attribution{
 
 }
 
-.attribut
+/* Mobile- 375px */
 
 @media screen {
     
