@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    /* ======== Fonts ======== */
+      /* Font sizes */
+    --fs-100: 0.94rem;
+    /* Font weights */
+    --fw-800: font-weight: 800;
+    --fw-700: font-weight: 700;
+    --fw-400: font-weight: 400;
+    /* ======== Colors ======== */
+    /* Primary colors */
+    --clr-primary-100: hsl(35, 77%, 62%);
+    --clr-primary-200: hsl(5, 85%, 63%);
+    /* Neutral colors */
+    --clr-neutral-100: hsl(36, 100%, 99%);
+    --clr-neutral-200: hsl(233, 8%, 79%);
+    --clr-neutral-300: hsl(236, 13%, 42%);
+    --clr-neutral-400: hsl(240, 100%, 5%);
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+#container{
+    display: grid;
+    height: 100vh;
+    gap: 1rem;
+    grid-template-areas:
+    "header header header" 
+    "main main sidebar"
+    "cards cards cards";
+    /* grid-template-columns: ;
+    grid-template-rows: ; */
+}
+
+header,
+main,
+aside,
+article{
+    color: var(--clr-neutral-200);
+    background-color: var(--clr-neutral-300);
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+aside{
+    grid-area: sidebar;
+}
+
+article{
+    grid-area: cards;
+}
